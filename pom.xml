@@ -38,4 +38,21 @@
         </dependencies>
     </dependencyManagement>
 
+
+    <build>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+    <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+    <resources>
+        <resource>
+            <directory>${basedir}/src/main/resources</directory>
+            <includes>
+                <include>*.*</include>
+                <include>META-INF/*.*</include>
+            </includes>
+            <filtering>false</filtering>
+        </resource>
+    </resources>
+    </build>
+
+
 </project>
